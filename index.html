@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="preload" href="fonts/inter-400.woff2" as="font">
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="main-header">
       <nav class="navigation">
-        <a class="navigation-logo" href="#">
+        <a class="navigation-logo" href="index.html">
           <img
             src="images/logo.svg"
             width="137"
@@ -25,7 +27,7 @@
             <a class="navigation-link" href="#">О компании</a>
           </li>
         </ul>
-        <a class="navigation-link" href="tel:+78005558628">+7 800 555-86-28</a>
+        <a class="navigation-link navigation-tel" href="tel:+78005558628">+7 800 555-86-28</a>
         <ul class="navigation-menu navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
@@ -44,7 +46,7 @@
     <main class="main-index">
       <h1 class="visually-hidden">Магазин мороженого «GllacyShop»</h1>
       <section class="slider">
-        <h2>Нежный пломбир<br>с клубничным джемом</h2>
+        <h2 class="slider-title">Нежный пломбир<br>с клубничным джемом</h2>
         <p>
           Натуральное мороженое из свежих сливок<br>и молока с вкуснейшим
           клубничным джемом – это идеальный десерт для всей семьи.
@@ -243,8 +245,7 @@
       <article class="blog">
         <h2 class="visually-hidden">Блог</h2>
         <span class="blog-title">Новое в нашем блоге</span>
-        <a class="blog-link" href="#"
-          >10 способов сервировки фруктовых щербетов<br>к столу</a>
+        <p><a class="blog-link" href="#">10 способов сервировки фруктовых щербетов<br>к столу</a></p>
       </article>
       <aside class="subscription">
         <h2 class="visually-hidden">Подписка</h2>
@@ -319,9 +320,7 @@
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <address class="contacts-address">
-          <p class="contacts-address-text">
-            Адрес главного офиса и офлайн-магазина:
-          </p>
+          <p class="contacts-address-text">Адрес главного офиса и офлайн-магазина:</p>
           <b class="contacts-address-value">наб. реки Карповки,<br>5 лит П, Санкт-Петербург</b>
           <p class="contacts-phone">Для заказов по телефону:</p>
           <a class="contacts-phone-value" href="tel:+78128121212">+7 (812) 812-12-12</a>
