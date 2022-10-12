@@ -1,0 +1,611 @@
+@font-face {
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/inter-400.woff2") format("woff2"),
+       url("../fonts/inter-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/inter-700.woff2") format("woff2"),
+       url("../fonts/inter-bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/inter-900.woff2") format("woff2"),
+       url("../fonts/inter-black.woff") format("woff");
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: "Inter", "Roboto", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 22px;
+  background-color: #feafc3;
+  color:#2D3440;
+}
+
+.button {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #2D3440;
+  text-decoration: none;
+  background-color: #fcfcfc;
+  border: 4px solid;
+  border-color: rgba(252, 252, 252, 0.4);
+}
+
+.button-subscription,
+.button-shipping,
+.product-card-button,
+.button-feedback {
+  color: #fcfcfc;
+  background-color: #ff2f64;
+  border-color: rgba(255, 47, 100, 0.3);
+}
+
+.button-filter {
+  font-size: 14px;
+  background-color: rgba(252, 252, 252, 0.3);
+  border: 2px solid;
+  border-color: #fcfcfc;
+}
+
+.navigation-link,
+.contacts-phone-value,
+.footer-menu-link,
+.pagination-link {
+  line-height: 20px;
+  text-decoration: none;
+  color:#2D3440;
+  text-align: center;
+}
+
+.navigation-user .navigation-link,
+.footer-menu-link {
+  font-size: 14px;
+}
+
+.navigation-tel,
+.contacts-phone-value {
+  font-weight: 700;
+}
+
+.navigation-menu,
+.navigation-user,
+.gifts-list,
+.product-list,
+.about-list,
+.footer-menu-list,
+.breadcrumbs,
+.slider-social-list,
+.footer-social-list,
+.catalog-filter-list,
+.subscription-description,
+.footer-menu-list,
+.catalog-filter-group,
+.slider-title,
+.slider-pagination {
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-item,
+.gifts-item,
+.product-card,
+.about-item,
+.footer-menu-item,
+.breadcrumbs-item,
+.pagination-item,
+.slider-social-item,
+.footer-social-item,
+.catalog-filter-item,
+.slider-pagination-item {
+  list-style-type: none;
+}
+
+.gifts-item {
+  color:#2D3440;
+  background-color: #ff7799;
+}
+
+.gifts-item:nth-of-type(1) {
+  background-image: url("../images/raspberry-background.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.gifts-item:nth-of-type(2) {
+  background-image: url("../images/marshmallow.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.about {
+  background-color: #ffffff;
+  background-image: url("../images/waffle.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.blog {
+  background-color: #ffffff;
+  background-image: url("../images/news.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: 64px;
+}
+
+.subscription {
+  background-color: #ffffff;
+  background-image: url("../images/mail.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.shipping {
+  background-color: #fcfcfc;
+  background-image: url("../images/shipping.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: left -134px;
+}
+
+.contacts {
+  background-color: #fcfcfc;
+  background-image: url("../images/contacts.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.product-card {
+  color:#2D3440;
+  background-color: #fcfcfc;
+}
+
+h2.gifts-title,
+.catalog-title,
+.about-title,
+.shipping-title,
+.slider-title,
+.inner-header-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+}
+
+.shipping-title,
+.footer-menu-link {
+  text-align: left;
+}
+
+.slider-title {
+  text-align: left;
+  font-size: 36px;
+}
+
+.slider p {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+h3.gifts-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.product-card-link {
+  text-decoration: none;
+  color:#2D3440;
+  text-align: center;
+}
+
+.product-card-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color:#2D3440;
+}
+
+.blog-title {
+  line-height: 20px;
+  color: #565c66;
+}
+
+.blog-link {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color:#2D3440;
+}
+
+.subscription-description,
+.shipping-title-description,
+.about-item,
+.product-card-description,
+.shipping-form-description,
+.contacts-address-text,
+.contacts-phone,
+.contacts-schedule {
+  color:#565c66;
+}
+
+.contacts-address {
+  font-style: normal;
+}
+
+.shipping-form-date label,
+.shipping-form-tel label,
+.shipping-form-address label {
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.contacts-phone-value,
+.contacts-address-value {
+  text-align: left;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.contacts-schedule {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.footer-htmlacademy-copyright {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.htmlacademy-link,
+.breadcrumbs-link {
+  color:#2D3440;
+}
+
+.breadcrumbs-link {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.inner-header-title {
+  text-align: left;
+}
+
+.filters-select-title,
+.filters-select-control,
+.catalog-filter-group {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.catalog-filter-group {
+  border: none;
+}
+
+.pagination-current {
+  background-color: #fcfcfc;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.navigation {
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.navigation-menu {
+  display: flex;
+  align-items: center;
+  width: 548px;
+}
+
+.navigation-menu .navigation-item {
+  padding: 8px 16px 8px 16px;
+}
+
+.navigation-user {
+  display: flex;
+}
+
+.navigation-user .navigation-item {
+  padding: 6px 16px 6px 16px;
+  margin-left: 16px;
+  background-color: rgba(252, 252, 252, 0.3);
+  border-radius: 30px;
+}
+
+.navigation-user-container {
+  display:flex;
+  align-items: center;
+  max-width: 520px;
+  margin-left: auto;
+}
+
+.navigation-tel {
+  display: block;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.page-container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.gifts-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gifts-item,
+.about,
+.blog,
+.subscription,
+.shipping,
+.contacts,
+.contacts-address,
+.subscription-container,
+.shipping-form {
+  border-radius: 16px;
+}
+
+.gifts-item {
+  width: 506px;
+  padding: 32px;
+}
+
+.gifts-description {
+  display: block;
+  width: 328px;
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+
+.blog-subscription-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog {
+  width: 506px;
+  padding: 32px;
+}
+
+.blog-link {
+  display: block;
+  width: 303px;
+  margin-top: 12px;
+}
+
+.subscription-description {
+  margin-bottom: 42px;
+}
+
+.page-footer-container {
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.footer-social {
+  width: 104px;
+  margin-right: 300px;
+}
+
+.footer-menu {
+  width: 356px;
+  margin-right: 200px;
+}
+
+.footer-htmlacademy {
+  margin-left: auto;
+  max-width: 193px;
+}
+
+.navigation-logo-svg {
+  width: 137px;
+  margin-right: 16px;
+}
+
+.catalog-filter {
+  display: flex;
+  flex-wrap: wrap;
+  width: 918px;
+}
+
+.sorting-container {
+  width: 196px;
+  margin-right: 24px;
+  align-self: flex-start;
+}
+
+.filters-select-title,
+.catalog-filter-title {
+  margin-bottom: 8px;
+}
+
+.catalog-filter-group {
+  width: 196px;
+  margin-right: 24px;
+}
+
+.catalog-filter .catalog-filter-group:nth-of-type(2) {
+  width: 383px;
+  margin-right: 0;
+}
+
+.catalog-filter .catalog-filter-group:last-of-type {
+  width: 556px;
+  margin-right: 16px;
+  margin-top: 16px;
+}
+
+.catalog-filter-list {
+  display: flex;
+  background-color: rgba(252, 252, 252, 0.3);
+  padding: 8px 24px 8px 24px;
+  border-radius: 30px;
+}
+
+.catalog-filter-item {
+  margin-right: 16px;
+}
+
+.button-filter {
+  align-self: flex-end;
+  width: 173px;
+}
+
+.slider-text-container p {
+  display: block;
+  width: 429px;
+  margin-top: 24px;
+  margin-bottom: 48px;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  width: 1170px;
+  flex-wrap: wrap;
+}
+
+.slider-text-container {
+  margin-left: 70px;
+}
+
+.slider-image-container {
+  display: flex;
+  align-items: center;
+  width: 630px;
+}
+
+.slider-lists-container {
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+}
+
+.slider-pagination {
+  display: flex;
+  width: 52px;
+}
+
+.slider-pagination-button {
+  background-color: rgba(252, 252, 252, 0.3);
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  margin-right: 8px;
+  border: none;
+}
+
+.slider-pagination-button-current {
+  background-color: #fcfcfc;
+}
+
+.slider-social-list,
+.footer-social-list {
+  display: flex;
+  width: 104px;
+}
+
+.slider-social-item {
+  margin-left: 16px;
+}
+
+.slider-button {
+  background-color: rgba(252, 252, 252, 0.3);
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  border: 2px solid #fcfcfc;
+
+}
+
+.footer-social-item {
+  margin-right: 16px;
+}
+
+.contacts-address {
+  background-color: #fcfcfc;
+  width: 263px;
+  padding: 40px;
+}
+
+.contacts {
+  padding: 64px;
+}
+
+.subscription {
+  width: 570px;
+}
+.subscription-container {
+  background-color: #ffffff;
+  margin: 6px;
+  padding: 26px;
+}
+
+.shipping {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 64px;
+}
+
+.shipping-text-container {
+  width: 371px;
+  margin-left: 36px;
+}
+
+.shipping-form {
+  background-color: #ffffff;
+  width: 420px;
+  padding: 40px;
+}
