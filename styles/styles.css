@@ -400,10 +400,13 @@ h3.gifts-title {
   padding: 32px;
 }
 
+.gifts-title {
+  margin-bottom: 28px;
+}
+
 .gifts-description {
   display: block;
   width: 328px;
-  margin-top: 28px;
   margin-bottom: 28px;
 }
 
@@ -417,10 +420,13 @@ h3.gifts-title {
   padding: 32px;
 }
 
+.blog-title {
+  margin-bottom: 12px;
+}
+
 .blog-link {
   display: block;
   width: 303px;
-  margin-top: 12px;
 }
 
 .subscription-description {
@@ -483,7 +489,6 @@ h3.gifts-title {
 .catalog-filter .catalog-filter-group:last-of-type {
   width: 556px;
   margin-right: 16px;
-  margin-top: 16px;
 }
 
 .catalog-filter-list {
@@ -502,10 +507,13 @@ h3.gifts-title {
   width: 173px;
 }
 
+.slider-title {
+  margin-bottom: 24px;
+}
+
 .slider-text-container p {
   display: block;
   width: 429px;
-  margin-top: 24px;
   margin-bottom: 48px;
 }
 
