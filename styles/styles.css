@@ -99,31 +99,24 @@ body {
 .about-list,
 .footer-menu-list,
 .breadcrumbs,
+.pagination,
 .slider-social-list,
 .footer-social-list,
 .catalog-filter-list,
-.subscription-description,
 .footer-menu-list,
-.catalog-filter-group,
-.slider-title,
 .slider-pagination {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.subscription-description,
+.catalog-filter-group,
+.slider-title {
   margin: 0;
   padding: 0;
 }
 
-.navigation-item,
-.gifts-item,
-.product-card,
-.about-item,
-.footer-menu-item,
-.breadcrumbs-item,
-.pagination-item,
-.slider-social-item,
-.footer-social-item,
-.catalog-filter-item,
-.slider-pagination-item {
-  list-style-type: none;
-}
 
 .gifts-item {
   color:#2D3440;
@@ -218,6 +211,7 @@ h3.gifts-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
+  margin: 0 0 28px 0;
 }
 
 .product-card-link {
@@ -233,12 +227,18 @@ h3.gifts-title {
   color:#2D3440;
 }
 
+.blog p {
+  margin-top: 12px;
+}
+
 .blog-title {
   line-height: 20px;
   color: #565c66;
 }
 
 .blog-link {
+  display: block;
+  max-width: 303px;
   text-decoration: none;
   font-weight: 700;
   font-size: 24px;
@@ -275,9 +275,19 @@ h3.gifts-title {
   line-height: 24px;
 }
 
+.contacts-address-value {
+  display: block;
+  margin-bottom: 24px;
+}
+
 .contacts-schedule {
   font-size: 14px;
   line-height: 20px;
+  margin: 0 0 32px 0;
+}
+
+.contacts-phone {
+  margin: 0 0 12px 0;
 }
 
 .footer-htmlacademy-copyright {
@@ -400,14 +410,50 @@ h3.gifts-title {
   padding: 32px;
 }
 
-.gifts-title {
-  margin-bottom: 28px;
+h2.gifts-title {
+  margin: 0 auto 55px auto;
+  max-width: 434px;
+}
+
+.catalog-title {
+  margin: 0 auto 56px auto;
+  max-width: 527px;
+}
+
+.about-title {
+  margin: 0 auto 56px auto;
+}
+
+.about {
+  padding: 24px;
+}
+
+.about-container {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 56px 40px 56px 40px;
+}
+
+.shipping-title {
+  margin: 0 auto 24px auto;
+}
+
+.shipping-title-description {
+  margin: 0;
+}
+
+.shipping-form-description {
+  margin: 0 0 32px 0;
+}
+
+.contacts-address-text {
+  margin: 0 0 12px 0;
 }
 
 .gifts-description {
   display: block;
-  width: 328px;
-  margin-bottom: 28px;
+  max-width: 328px;
+  margin: 0 0 28px 0;
 }
 
 .blog-subscription-container {
@@ -418,15 +464,6 @@ h3.gifts-title {
 .blog {
   width: 506px;
   padding: 32px;
-}
-
-.blog-title {
-  margin-bottom: 12px;
-}
-
-.blog-link {
-  display: block;
-  width: 303px;
 }
 
 .subscription-description {
@@ -462,7 +499,8 @@ h3.gifts-title {
 .catalog-filter {
   display: flex;
   flex-wrap: wrap;
-  width: 918px;
+  max-width: 918px;
+  gap: 16px 0;
 }
 
 .sorting-container {
@@ -505,6 +543,7 @@ h3.gifts-title {
 .button-filter {
   align-self: flex-end;
   width: 173px;
+  margin: 0 auto;
 }
 
 .slider-title {
