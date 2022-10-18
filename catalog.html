@@ -18,13 +18,13 @@
             alt="Логотип компании GllacyShop.">
         </a>
         <ul class="navigation-menu">
-          <li class="navigation-item">
+          <li class="navigation-menu-item">
             <a class="navigation-link" href="catalog.html">Каталог</a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-menu-item">
             <a class="navigation-link" href="#">Доставка и оплата</a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-menu-item">
             <a class="navigation-link" href="#">О компании</a>
           </li>
         </ul>
@@ -89,9 +89,7 @@
                       class="control-input"
                       type="radio"
                       name="product-group"
-                      value="0">
-                    0%
-                  </label>
+                      value="0">0%</label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
@@ -100,9 +98,7 @@
                       type="radio"
                       name="product-group"
                       value="up-to-10"
-                      checked>
-                    до 10%
-                  </label>
+                      checked>до 10%</label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
@@ -110,9 +106,7 @@
                       class="control-input"
                       type="radio"
                       name="product-group"
-                      value="up-to-30">
-                    до 30%
-                  </label>
+                      value="up-to-30">до 30%</label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
@@ -120,24 +114,20 @@
                       class="control-input"
                       type="radio"
                       name="product-group"
-                      value="above-30">
-                    выше 30%
-                  </label>
+                      value="above-30">выше 30%</label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Наполнители:</legend>
-              <ul class="catalog-filter-list">
+              <ul class="catalog-filter-filler-list">
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input
                       class="control-input"
                       type="checkbox"
                       name="chocolate"
-                      checked>
-                    шоколадные
-                  </label>
+                      checked>шоколадные</label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
@@ -145,27 +135,19 @@
                       class="control-input"
                       type="checkbox"
                       name="sugar-sprinkles"
-                      checked>
-                    сахарные посыпки
-                  </label>
+                      checked>сахарные посыпки</label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="fruit">
-                    фрукты
-                  </label>
+                    <input class="control-input" type="checkbox" name="fruit">фрукты</label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="syrups">
-                    сиропы
-                  </label>
+                    <input class="control-input" type="checkbox" name="syrups">сиропы</label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="jams">
-                    джемы
-                  </label>
+                    <input class="control-input" type="checkbox" name="jams">джемы</label>
                 </li>
               </ul>
             </fieldset>
@@ -363,36 +345,38 @@
               <a class="product-card-button button" href="#"><span class="visually-hidden">В корзину</span></a>
             </li>
           </ul>
-          <button class="button pagination-show-more" type="button">
-            Показать ещё
-          </button>
-          <ul class="pagination">
-            <li class="pagination-item">
-              <a class="pagination-link pagination-prev pagination-disabled">
-                <span class="visually-hidden">Предыдущая страница</span>
-              </a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link pagination-current">1</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">2</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">3</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">4</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">5</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link pagination-next" href="#">
-                <span class="visually-hidden">Следующая страница</span>
-              </a>
-            </li>
-          </ul>
+          <div class="pagination-container">
+            <button class="button pagination-show-more" type="button">
+              Показать ещё
+            </button>
+            <ul class="pagination">
+              <li class="pagination-item">
+                <a class="pagination-link pagination-prev pagination-disabled">
+                  <span class="visually-hidden">Предыдущая страница</span>
+                </a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link pagination-current">1</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">2</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">3</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">4</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">5</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link pagination-next" href="#">
+                  <span class="visually-hidden">Следующая страница</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </section>
       </div>
     </main>
@@ -427,6 +411,8 @@
             <li class="footer-menu-item">
               <a class="footer-menu-link" href="#">О производстве</a>
             </li>
+          </ul>
+          <ul class="footer-menu-list">
             <li class="footer-menu-item">
               <a class="footer-menu-link" href="#">Наши документы</a>
             </li>
