@@ -162,8 +162,10 @@
                   Сливочное мороженое с малиновым джемом
                 </p>
               </a>
-              <b class="product-card-price">310 ₽/кг</b>
-              <a class="product-card-button button" href="#"><span class="visually-hidden">В корзину</span></a>
+              <div class="product-card-container">
+                <b class="product-card-price">310 ₽/кг</b>
+                <a class="product-card-button button" href="#"><span class="visually-hidden">В корзину</span></a>
+              </div>
             </li>
             <li class="product-card">
               <a class="product-card-link" href="#">
@@ -178,8 +180,10 @@
                   Фисташковый пломбир с кусочками шоколада
                 </p>
               </a>
-              <b class="product-card-price">340 ₽/кг</b>
-              <a class="product-card-button button" href="#"><span class="visually-hidden">В корзину</span></a>
+              <div class="product-card-container">
+                <b class="product-card-price">340 ₽/кг</b>
+                <a class="product-card-button button" href="#"><span class="visually-hidden">В корзину</span></a>
+              </div>
             </li>
             <li class="product-card">
               <a class="product-card-link" href="#">
@@ -194,8 +198,10 @@
                   Крем-брюле<br>с черничным джемом
                 </p>
               </a>
-              <b class="product-card-price">330 ₽/кг</b>
-              <a class="product-card-button button" href="#"><span class="visually-hidden">В корзину</span></a>
+              <div class="product-card-container">
+                <b class="product-card-price">330 ₽/кг</b>
+                <a class="product-card-button button" href="#"><span class="visually-hidden">В корзину</span></a>
+              </div>
             </li>
             <li class="product-card">
               <a class="product-card-link" href="#">
@@ -210,8 +216,10 @@
                   Ванильный пломбир<br>со сладкой посыпкой
                 </p>
               </a>
-              <b class="product-card-price">320 ₽/кг</b>
-              <a class="product-card-button button" href="#"><span class="visually-hidden">В корзину</span></a>
+              <div class="product-card-container">
+                <b class="product-card-price">320 ₽/кг</b>
+                <a class="product-card-button button" href="#"><span class="visually-hidden">В корзину</span></a>
+              </div>
             </li>
           </ul>
         </section>
@@ -304,35 +312,41 @@
               Укажите адрес и дату доставки, и мы свяжемся <br>с вами, чтобы
               подтвердить заказ.
             </p>
-            <p class="shipping-form-date">
-              <label for="shipping-date">Дата</label>
-              <input
-                type="text"
-                id="shipping-date"
-                name="shipping-date"
-                placeholder="01.04.2020">
-            </p>
-            <p class="shipping-form-tel">
-              <label for="shipping-tel">Телефон</label>
-              <input
-                type="tel"
-                id="shipping-tel"
-                name="shipping-tel"
-                placeholder="+7 800 999-00-00"
-                required>
-            </p>
-            <p class="shipping-form-address">
-              <label for="shipping-address">Адрес</label>
-              <input
-                type="text"
-                id="shipping-address"
-                name="shipping-address"
-                placeholder="ул. Большая Конюшенная, 19/8"
-                required>
-            </p>
-            <button class="button button-shipping" type="submit">
-              Отправить
-            </button>
+            <div class="shipping-form-container">
+              <p class="shipping-form-date">
+                <label for="shipping-date">
+                  Дата
+                </label>
+                <input
+                  type="text"
+                  id="shipping-date"
+                  name="shipping-date"
+                  placeholder="01.04.2020">
+              </p>
+              <p class="shipping-form-tel">
+                <label for="shipping-tel">Телефон</label>
+                <input
+                  type="tel"
+                  id="shipping-tel"
+                  name="shipping-tel"
+                  placeholder="+7 800 999-00-00"
+                  required>
+              </p>
+              <p class="shipping-form-address">
+                <label for="shipping-address">
+                  Адрес
+                </label>
+                <input
+                  type="text"
+                  id="shipping-address"
+                  name="shipping-address"
+                  placeholder="ул. Большая Конюшенная, 19/8"
+                  required>
+              </p>
+              <button class="button button-shipping" type="submit">
+                Отправить
+              </button>
+            </div>
           </form>
         </section>
         <section class="contacts">
