@@ -366,7 +366,7 @@ h3.gifts-title {
 }
 
 .main-inner {
-  padding-top: 32px;
+  padding-top: 56px;
   padding-bottom: 40px;
 }
 
@@ -379,6 +379,7 @@ h3.gifts-title {
 .navigation-menu {
   display: flex;
   flex-wrap: wrap;
+  box-sizing: border-box;
   align-items: center;
   max-width: 548px;
 }
@@ -409,6 +410,7 @@ h3.gifts-title {
 
 .navigation-user-container {
   display:flex;
+  box-sizing: border-box;
   align-items: center;
   max-width: 540px;
   margin-left: auto;
@@ -877,5 +879,5 @@ h2.gifts-title {
 .product-card-button {
   width: 32px;
   height: 32px;
-  border-radius: 50%;
+  border-radius: 30%;
 }
