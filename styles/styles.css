@@ -589,14 +589,26 @@ h2.gifts-title {
 }
 
 .footer-menu {
-  display: flex;
-  width: 356px;
   margin-right: 200px;
 }
 
-.footer-menu-item {
-  padding-right: 24px;
-  padding-bottom: 8px;
+.footer-menu-list {
+  display: grid;
+  grid-template-columns: 16px auto auto;
+  gap: 8px;
+}
+
+.footer-menu-item:nth-of-type(odd) {
+  margin-left: 16px;
+}
+
+.footer-menu-list .footer-menu-item:first-child {
+  grid-row: span 2;
+  background-image: url("../images/icons/heart.svg");
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position-y: 3px;
+  margin-left: 0;
 }
 
 .footer-htmlacademy {
@@ -844,11 +856,27 @@ h2.gifts-title {
 }
 
 .about-item-icecream {
-  background-image: url("..images/icons/icecream.svg");
-  background-size: auto 100%;
+  background-image: url("../images/icons/icecream.svg");
   background-repeat: no-repeat;
-  background-position: left;
+  background-size: 48px 48px;
+}
 
+.about-item-farm {
+  background-image: url("../images/icons/farm.svg");
+  background-repeat: no-repeat;
+  background-size: 48px 48px;
+}
+
+.about-item-nature {
+  background-image: url("../images/icons/nature.svg");
+  background-repeat: no-repeat;
+  background-size: 48px 48px;
+}
+
+.about-item-termopack {
+  background-image: url("../images/icons/termopack.svg");
+  background-repeat: no-repeat;
+  background-size: 48px 48px;
 }
 
 .filters {
