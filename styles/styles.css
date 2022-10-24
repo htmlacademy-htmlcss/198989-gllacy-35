@@ -128,7 +128,8 @@ body {
 .footer-social-list,
 .catalog-filter-list,
 .catalog-filter-filler-list,
-.slider-pagination {
+.slider-pagination,
+.slider-image-container {
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -205,7 +206,8 @@ body {
   background-image: url("../images/contacts.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: left;
+
 }
 
 .product-card {
@@ -710,13 +712,42 @@ h2.gifts-title {
 
 .slider-text-container {
   margin-left: 70px;
-  margin-right: 40px;
+  margin-right: 62px;
 }
 
 .slider-image-container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  width: 630px;
+  width: 592px;
+  padding-right: 17px;
+}
+
+.slider-image {
+  position: relative;
+  opacity: 0.4;
+}
+
+.slider-image-current {
+  opacity: 1;
+}
+
+.slider-image::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 203, 216);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.slider-image-current::after {
+  width: 312px;
+  height: 312px;
 }
 
 .slider-lists-container {
@@ -753,6 +784,7 @@ h2.gifts-title {
 
 .slider-social-list {
   flex-direction: row-reverse;
+  padding-right: 2px;
 }
 
 .slider-social-item {
@@ -771,12 +803,21 @@ h2.gifts-title {
 }
 
 .slider-button {
-  position: relative;
+  position: absolute;
+  top: 47%;
   background-color: rgba(252, 252, 252, 0.3);
   border-radius: 50%;
   width: 38px;
   height: 38px;
   border: 2px solid #fcfcfc;
+}
+
+.slider-prev {
+  left: -20px;
+}
+
+.slider-next {
+  left: 292px;
 }
 
 .slider-next .slider-icon {
