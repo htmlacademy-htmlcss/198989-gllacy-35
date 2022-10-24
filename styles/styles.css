@@ -69,7 +69,16 @@ body {
   color: #fcfcfc;
   background-color: #ff2f64;
   border-radius: 26px;
-  box-shadow: 0 0 0 4px rgba(255, 47, 100, 0.3);
+  box-shadow: 0 0 0 4px rgba(255, 47, 100, 0.3), 0 4px 12px rgba(45, 52, 64, 0.1);
+}
+
+.button-subscription:hover,
+.button-shipping:hover,
+.button-feedback:hover {
+  color: #2d3440;
+  background-color: rgba(252, 252, 252, 0.3);
+  box-shadow: none;
+  box-shadow: 0 0 0 4px rgba(255, 47, 100, 1);
 }
 
 .button-subscription {
@@ -88,8 +97,34 @@ body {
   display: inline-block;
   padding: 12px 32px;
   border-radius: 26px;
-  box-shadow: 0 0 0 4px rgba(252, 252, 252, 0.4);
+  box-shadow: 0 0 0 4px rgba(252, 252, 252, 0.4), 0 4px 12px rgba(45, 52, 64, 0.1);
 }
+
+.button-order:hover,
+.button-gifts:hover,
+.pagination-show-more:hover {
+  background-color: rgba(252, 252, 252, 0.4);
+  box-shadow: none;
+  box-shadow: 0 4px 15px rgba(133, 133, 133, 0.15), 0 0 0 4px rgba(252, 252, 252, 1);
+}
+
+.button-order:focus,
+.button-gifts:focus,
+.pagination-show-more:focus {
+  background-color: rgba(252, 252, 252, 0.5);
+  box-shadow: none;
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1), 0 0 0 2px rgba(45, 52, 64, 1);
+  outline: none;
+}
+
+.button-order:active,
+.button-gifts:active,
+.pagination-show-more:active {
+  background-color: rgba(252, 252, 252, 1);
+  box-shadow: none;
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1), 0 0 0 2px rgba(45, 52, 64, 1);
+}
+
 .slider-social-item .button,
 .footer-social-item .button {
   background: none;
@@ -393,7 +428,7 @@ h3.gifts-title {
 
 .main-inner {
   padding-top: 56px;
-  padding-bottom: 40px;
+  padding-bottom: 81px;
 }
 
 .navigation {
@@ -583,6 +618,10 @@ h2.gifts-title {
   width: 1170px;
   margin: 0 auto;
   padding: 48px 14px 48px 4px;
+}
+
+.footer-inner {
+  border-top: 1px solid rgba(252, 252, 252, 0.3);
 }
 
 .footer-social {
