@@ -776,7 +776,7 @@ h2.gifts-title {
   display: flex;
   width: 1170px;
   margin: 0 auto;
-  padding: 48px 14px 48px 4px;
+  padding: 48px 0 48px 2px;
 }
 
 .footer-inner {
@@ -812,7 +812,6 @@ h2.gifts-title {
 }
 
 .footer-htmlacademy {
-  margin-left: auto;
   max-width: 193px;
 }
 
@@ -903,7 +902,7 @@ h2.gifts-title {
 
 .slider-text-container {
   margin-left: 70px;
-  margin-right: 62px;
+  margin-right: auto;
 }
 
 .slider-image-container {
@@ -911,7 +910,7 @@ h2.gifts-title {
   justify-content: space-between;
   align-items: center;
   width: 592px;
-  padding-right: 17px;
+  padding-right: 4px;
 }
 
 .slider-image {
@@ -990,16 +989,16 @@ h2.gifts-title {
 }
 
 .slider-social-list {
-  flex-direction: row-reverse;
-  padding-right: 2px;
+  justify-content: flex-end;
+  margin-right: 2px;
 }
 
 .slider-social-item {
-  margin-left: 16px;
+  margin-right: 16px;
 }
 
 .slider-social-item:last-child {
-  margin-left: 0;
+  margin-right: 0;
 }
 
 .slider-social-item a {
