@@ -111,6 +111,17 @@ body {
   box-shadow: 0 0 0 4px rgba(255, 47, 100, 0.3), 0 4px 12px rgba(45, 52, 64, 0.1);
 }
 
+.button-subscription-spinner::after,
+.button-shipping-spinner::after,
+.button-feedback-spinner::after {
+  content: url("../images/icons/spinner-white.svg");
+  margin-left: 8px;
+}
+
+.button-feedback-spinner {
+  padding: 12px 26px;
+}
+
 .button-subscription:hover,
 .button-shipping:hover,
 .button-feedback:hover {
@@ -187,6 +198,13 @@ body {
   padding: 12px 32px;
   border-radius: 26px;
   box-shadow: 0 0 0 4px rgba(252, 252, 252, 0.4), 0 4px 12px rgba(45, 52, 64, 0.1);
+}
+
+.button-order-spinner::after,
+.button-gifts-spinner::after,
+.pagination-show-more-spinner::after {
+  content: url("../images/icons/spinner.svg");
+  margin-left: 8px;
 }
 
 .button-order:hover,
@@ -1091,7 +1109,7 @@ h2.gifts-title {
   font-style: normal;
   background-color: #fcfcfc;
   box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
-  width: 263px;
+  max-width: 263px;
   padding: 40px;
 }
 
