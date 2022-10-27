@@ -86,7 +86,27 @@
               </select>
             </div>
             <fieldset class="catalog-filter-group">
-                <legend class="catalog-filter-title">Цена: 100 ₽ – 500 ₽</legend>
+                <legend class="catalog-filter-title">Цена:</legend>
+                <div class="range">
+                  <div class="range-scale">
+                    <div class="range-bar" style="left: 56px; width: 56px">
+                      <button class="range-toggle toggle-min" type="button">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-toggle toggle-max" type="button">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="range-wrapper-inputs">
+                    <label class="catalog-filter-label">
+                      <input class="range-input" type="number" value="100" name="min-price"> ₽
+                    </label>
+                    <label class="catalog-filter-label">
+                      – <input class="range-input" type="number" value="500" name="max-price" style="width: 37px"> ₽
+                    </label>
+                  </div>
+                </div>
             </fieldset>
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Жирность:</legend>

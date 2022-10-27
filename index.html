@@ -315,12 +315,11 @@
                 method="post">
                 <label class="visually-hidden" for="subscription-email">E-mail</label>
                 <input
-                  class="subscription-email"
+                  class="field"
                   type="email"
                   name="subscription-email"
                   placeholder="email@example.com"
-                  id="subscription-email"
-                  required>
+                  id="subscription-email">
                 <button class="button button-subscription" type="submit">
                   Отправить
                 </button>
@@ -347,10 +346,13 @@
             </p>
             <div class="shipping-form-container">
               <p class="shipping-form-date">
-                <label for="shipping-date">
+                <label class="form-label-icon" for="shipping-date">
                   Дата
+                  <button class="info">
+                    <span class="visually-hidden">Посмотреть дополнительную информацию</span></button>
                 </label>
                 <input
+                  class="field"
                   type="text"
                   id="shipping-date"
                   name="shipping-date"
@@ -359,6 +361,7 @@
               <p class="shipping-form-tel">
                 <label for="shipping-tel">Телефон</label>
                 <input
+                  class="field"
                   type="tel"
                   id="shipping-tel"
                   name="shipping-tel"
@@ -366,10 +369,13 @@
                   required>
               </p>
               <p class="shipping-form-address">
-                <label for="shipping-address">
+                <label class="form-label-icon" for="shipping-address">
                   Адрес
+                  <button class="info">
+                    <span class="visually-hidden">Посмотреть дополнительную информацию</span></button>
                 </label>
                 <input
+                  class="field"
                   type="text"
                   id="shipping-address"
                   name="shipping-address"
