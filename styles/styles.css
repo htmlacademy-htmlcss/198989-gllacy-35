@@ -1006,6 +1006,10 @@ h2.gifts-title {
   margin-right: auto;
 }
 
+.slider-visually-hidden {
+  display: none;
+}
+
 .slider-image-container {
   display: flex;
   justify-content: space-between;
