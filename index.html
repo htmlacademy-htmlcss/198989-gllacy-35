@@ -46,9 +46,9 @@
             </li>
             <li class="navigation-user-item">
               <a class="navigation-link" href="#">
-                <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="navigation-icon cart-count-true" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M1.1667.108a.6667.6667 0 1 0 0 1.3333h1.7712l.4675 2.3354a.664.664 0 0 0 .0106.053l.9674 4.8334.0001.0006a1.8256 1.8256 0 0 0 1.8183 1.4691h5.6207a1.8258 1.8258 0 0 0 1.8185-1.4697l.001-.005.9271-4.8614a.6669.6669 0 0 0-.6549-.7916H4.6107L4.1381.6438a.6667.6667 0 0 0-.6537-.5359H1.1667ZM5.691 8.4023l-.8134-4.064h8.2308l-.7756 4.0669a.4923.4923 0 0 1-.4918.3943v-.0002H6.1962l-.0128.0002a.4922.4922 0 0 1-.4922-.3963l-.0002-.001Zm-1.1336 3.961c0-.688.5577-1.2457 1.2457-1.2457.688 0 1.2457.5577 1.2457 1.2457 0 .6879-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5578-1.2457-1.2457Zm6.3733 0c0-.688.5577-1.2457 1.2457-1.2457.688 0 1.2457.5577 1.2457 1.2457 0 .6879-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5578-1.2457-1.2457Z" fill="#2D3440"/></svg>
-                2 товара</a>
+                <span class="cart-count">2 товара</span></a>
                 <div class="popover popover-cart">
                   <div class="popover-content">
                     <h2 class="popover-title">Корзина</h2>
@@ -412,8 +412,12 @@
               <p class="shipping-form-date">
                 <label class="form-label-icon" for="shipping-date">
                   Дата
-                  <button class="info">
-                    <span class="visually-hidden">Посмотреть дополнительную информацию</span></button>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                      <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите желаемую дату и номер телефона и мы свяжемся с вами для подтверждения доставки</span>
+                  </span>
                 </label>
                 <input
                   class="field"
@@ -435,8 +439,12 @@
               <p class="shipping-form-address">
                 <label class="form-label-icon" for="shipping-address">
                   Адрес
-                  <button class="info">
-                    <span class="visually-hidden">Посмотреть дополнительную информацию</span></button>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                      <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+                    </button>
+                    <span class="tooltip-text tooltip-address" role="tooltip" id="tooltip-label-date">Введите название улицы, дома и квартиры</span>
+                  </span>
                 </label>
                 <input
                   class="field"
@@ -528,5 +536,30 @@
         </section>
       </div>
     </footer>
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-feedback">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Мы обязательно ответим вам!</h2>
+          <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group">
+              <label class="visually-hidden" for="feedback-name">Имя и фамилия</label>
+              <input class="feedback-form-field field" type="text" id="feedback-name" name="feedback-name" placeholder="Имя и фамилия">
+            </p>
+            <p class="field-group">
+              <label class="visually-hidden" for="feedback-email">email@example.com</label>
+              <input class="feedback-form-field field" type="email" id="feedback-email" name="feedback-email" placeholder="email@example.com">
+            </p>
+            <p class="field-group">
+              <label class="visually-hidden" for="feedback-text">В свободной форме</label>
+              <textarea class="feedback-form-field field" rows="9" cols="9" id="feedback-text" name="feedback-text" placeholder="В свободной форме"></textarea>
+            </p>
+            <button class="button feedback-form-button" type="submit">Отправить</button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
