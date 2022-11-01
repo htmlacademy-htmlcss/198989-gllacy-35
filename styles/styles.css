@@ -1122,6 +1122,7 @@ h2.gifts-title {
 
 .catalog-filter-list {
   display: flex;
+  box-sizing: border-box;
   max-width: 480px;
   background-color: rgba(252, 252, 252, 0.3);
   padding: 8px 24px 8px 24px;
@@ -1130,6 +1131,8 @@ h2.gifts-title {
 
 .catalog-filter-item {
   margin-right: 16px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .catalog-filter-filler-list {
