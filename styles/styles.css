@@ -112,7 +112,8 @@ body {
 .button-shipping,
 .button-feedback,
 .button-place-order,
-.feedback-form-button {
+.feedback-form-button,
+.auth-form-button {
   display: inline-block;
   padding: 12px 32px;
   color: #fcfcfc;
@@ -125,7 +126,8 @@ body {
 .button-shipping-spinner::after,
 .button-feedback-spinner::after,
 .button-place-order-spinner::after,
-.feedback-form-button-spinner::after {
+.feedback-form-button-spinner::after,
+.auth-form-button-spinner::after {
   content: url("../images/icons/spinner-white.svg");
   margin-left: 8px;
   vertical-align: middle;
@@ -140,7 +142,8 @@ body {
 .button-shipping:hover,
 .button-feedback:hover,
 .button-place-order:hover,
-.feedback-form-button:hover {
+.feedback-form-button:hover,
+.auth-form-button:hover {
   color: #2d3440;
   background-color: rgba(252, 252, 252, 0.3);
   box-shadow: 0 0 0 4px rgba(255, 47, 100, 1);
@@ -150,7 +153,8 @@ body {
 .button-shipping:focus,
 .button-feedback:focus,
 .button-place-order:focus
-.feedback-form-button:focus {
+.feedback-form-button:focus,
+.auth-form-button:focus {
   background-color: #ff2f64;
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1), 0 0 0 2px rgba(45, 52, 64, 1);
   outline: none;
@@ -160,7 +164,8 @@ body {
 .button-shipping:active,
 .button-feedback:active,
 .button-place-order:active,
-.feedback-form-button:active {
+.feedback-form-button:active,
+.auth-form-button:active {
   color: #fcfcfc;
   background-color: #feafc3;
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1), 0 0 0 2px rgba(45, 52, 64, 1);
@@ -171,7 +176,8 @@ body {
 .button-shipping:disabled,
 .button-feedback:disabled,
 .button-place-order:disabled,
-.feedback-form-button:disabled {
+.feedback-form-button:disabled,
+.auth-form-button:disabled {
   color: #565c66;
   background-color: #b9b9b9;
   box-shadow: 0 0 0 4px rgba(185, 185, 185, 0.3);
@@ -780,6 +786,30 @@ h3.gifts-title {
 .navigation-user-item .navigation-link:active {
   background-color: #fcfcfc;
   box-shadow: none;
+}
+
+.navigation-user-item .popover-link {
+  background-color: #ff4a78;
+  border-radius: 30px;
+  color: #fcfcfc;
+}
+
+.navigation-user-item .popover-link:hover {
+  background-color: #ff4a78;
+  color: #fcfcfc;
+  opacity: 0.6;
+}
+
+.navigation-user-item .popover-link:focus {
+  background-color: #ff4a78;
+  color: #fcfcfc;
+  opacity: 1;
+}
+
+.navigation-user-item .popover-link:active {
+  background-color: #ff4a78;
+  color: #fcfcfc;
+  opacity: 0.3;
 }
 
 .navigation-user-container {
@@ -1616,7 +1646,7 @@ h2.gifts-title {
   font-size: 16px;
   line-height: 20px;
   margin: 0;
-  padding: 14px 15px;
+  padding: 13px 15px;
   font-weight: 400;
   background-color: #fcfcfc;
   border: 1px solid #b9b9b9;
@@ -1953,6 +1983,7 @@ padding: 9px 8px 7px 8px;
   top: 0;
   right: 0;
   z-index: 1;
+  box-sizing: border-box;
   margin-top: 44px;
   width: 356px;
   padding: 24px 16px;
@@ -1965,7 +1996,54 @@ padding: 9px 8px 7px 8px;
 
 .search-form .field {
   margin-top: 0;
-  padding-top: 13px;
-  padding-bottom: 13px;
   width: 100%;
+}
+
+.popover-login {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  box-sizing: border-box;
+  margin-top: 44px;
+  width: 420px;
+  padding: 48px;
+  color: #2d3440;
+  background-color: #fcfcfc;
+  box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
+  border-radius: 4px;
+  display: none;
+}
+
+.popover-login-title {
+  margin: 0;
+  line-height: 30px;
+  padding-bottom: 32px;
+}
+
+.auth-form-field {
+  margin: 0;
+  width: 100%;
+}
+
+.field-group:first-child {
+  margin-bottom: 16px;
+}
+
+.field-group:last-of-type {
+  margin-bottom: 32px;
+}
+
+.signup-link {
+  display: inline-block;
+  margin-left: 23px;
+  vertical-align: bottom;
+}
+
+.auth-form-link {
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2d3440;
+  text-underline-position: under;
 }
