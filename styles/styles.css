@@ -184,7 +184,7 @@ body {
 }
 
 .button-subscription {
-  margin-left: 18px;
+  margin-left: 16px;
 }
 
 .button-filter {
@@ -418,15 +418,15 @@ body {
 .blog {
   background-color: #ffffff;
   background-image: url("../images/news.jpg");
-  background-size: 100% auto;
+  background-size: 640px auto;
   background-repeat: no-repeat;
-  background-position: 64px;
+  background-position-y: -105px;
 }
 
 .subscription {
   background-color: #ffffff;
   background-image: url("../images/mail.png");
-  background-size: 100% auto;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
@@ -435,7 +435,7 @@ body {
   background-image: url("../images/shipping.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-  background-position: left -134px;
+  background-position: 20px -134px;
 }
 
 .contacts {
@@ -453,7 +453,7 @@ body {
   color:#2d3440;
   background-color: #fcfcfc;
   border-radius: 8px;
-  padding: 0 40px 24px 40px;
+  padding: 0 40px 27px 40px;
   margin-top: 51px;
 }
 
@@ -472,6 +472,10 @@ h2.gifts-title,
 .shipping-title,
 .footer-menu-link {
   text-align: left;
+}
+
+.footer-menu-link {
+  vertical-align: top;
 }
 
 .slider-title {
@@ -511,6 +515,8 @@ h3.gifts-title {
 }
 
 .blog p {
+  display: block;
+  margin: 0;
   margin-top: 12px;
 }
 
@@ -573,6 +579,16 @@ h3.gifts-title {
 .footer-htmlacademy-copyright {
   font-size: 12px;
   line-height: 16px;
+  margin: 0;
+}
+
+.footer-logo {
+  display: block;
+  padding-bottom: 14px;
+}
+
+.footer-htmlacademy-logo {
+  display: block;
 }
 
 .htmlacademy-link,
@@ -658,14 +674,14 @@ h3.gifts-title {
 }
 
 .main-inner {
-  padding-top: 56px;
+  padding-top: 32px;
   padding-bottom: 81px;
 }
 
 .navigation {
   display: flex;
   width: 1170px;
-  margin: 0 auto;
+  margin: 0 auto 24px auto;
 }
 
 .navigation-menu {
@@ -835,6 +851,7 @@ h3.gifts-title {
 .gifts-list {
   display: flex;
   justify-content: space-between;
+  box-sizing: border-box;
 }
 
 .gifts-item,
@@ -843,15 +860,19 @@ h3.gifts-title {
 .subscription,
 .shipping,
 .contacts,
-.contacts-address,
-.subscription-container,
-.shipping-form {
+.subscription-container{
   border-radius: 16px;
 }
 
+.shipping-form,
+.contacts-address {
+  border-radius: 8px;
+}
+
 .gifts-item {
-  width: 506px;
-  padding: 32px;
+  box-sizing: border-box;
+  width: 570px;
+  padding: 36px;
 }
 
 h2.gifts-title {
@@ -909,10 +930,11 @@ h2.gifts-title {
 .blog {
   width: 506px;
   padding: 32px;
+  padding-bottom: 68px;
 }
 
 .subscription-description {
-  margin-bottom: 42px;
+  margin-bottom: 44px;
 }
 
 .inner-header-title {
@@ -923,7 +945,7 @@ h2.gifts-title {
   display: flex;
   width: 1170px;
   margin: 0 auto;
-  padding: 48px 0 48px 2px;
+  padding: 48px 2px 48px 2px;
 }
 
 .footer-inner {
@@ -940,9 +962,11 @@ h2.gifts-title {
 }
 
 .footer-menu-list {
+  box-sizing: border-box;
   display: grid;
   grid-template-columns: 16px auto auto;
-  gap: 8px;
+  column-gap: 8px;
+  row-gap: 6px;
 }
 
 .footer-menu-item:nth-of-type(odd) {
@@ -1058,12 +1082,12 @@ h2.gifts-title {
 }
 
 .toggle-min {
-  top: -7px;
+  top: -6px;
   left: -15px;
 }
 
 .toggle-max {
-  top: -7px;
+  top: -6px;
   right: -15px;
 }
 
@@ -1199,6 +1223,7 @@ h2.gifts-title {
   align-items: center;
   width: 1170px;
   flex-wrap: wrap;
+  margin-top: 21px;
   margin-bottom: 80px;
 }
 
@@ -1404,7 +1429,7 @@ h2.gifts-title {
   background-color: #fcfcfc;
   box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
   max-width: 263px;
-  padding: 40px;
+  padding: 40px 40px 42px 40px;
 }
 
 .contacts {
@@ -1415,9 +1440,10 @@ h2.gifts-title {
   width: 570px;
 }
 .subscription-container {
+  box-sizing: border-box;
   background-color: #ffffff;
   margin: 6px;
-  padding: 26px;
+  padding: 26px 28px 28px 26px;
 }
 
 .shipping {
@@ -1436,7 +1462,7 @@ h2.gifts-title {
 .shipping-form {
   background-color: #ffffff;
   width: 420px;
-  padding: 40px;
+  padding: 40px 40px 42px 40px;
   box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
 }
 
@@ -1506,7 +1532,7 @@ h2.gifts-title {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 0 0 auto;
+  margin: 0 -4px 0 auto;
 }
 
 .pagination-show-more {
@@ -1552,7 +1578,7 @@ h2.gifts-title {
 }
 
 .pagination-next {
-  margin-left: 8px;
+  margin-left: 6px;
 }
 
 .shipping-form-container {
@@ -1705,7 +1731,7 @@ h2.gifts-title {
   border-radius: 50%;
   width: 168px;
   height: 168px;
-  margin: -51px auto 16px auto;
+  margin: -51px auto 8px auto;
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
 }
 
