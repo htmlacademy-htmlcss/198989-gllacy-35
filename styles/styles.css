@@ -1870,8 +1870,7 @@ padding: 9px 8px 7px 8px;
 
 .modal-close-button {
   position: absolute;
-  margin: 32px 32px 12px 12px;
-  padding: 0;
+  padding: 52px 52px 32px 32px;
   top: 0;
   right: 0;
   width: 20px;
@@ -1894,14 +1893,13 @@ padding: 9px 8px 7px 8px;
 }
 
 .feedback-form-field {
-  margin: 0 0 16px 0;
+  margin: 0;
   box-sizing: border-box;
   resize: none;
 }
 
 .field-group:last-of-type .feedback-form-field {
   height: 149px;
-  margin-bottom: 32px;
 }
 
 .feedback-form .field {
@@ -2026,11 +2024,11 @@ padding: 9px 8px 7px 8px;
   width: 100%;
 }
 
-.field-group:first-child {
+.feedback-form .field-group {
   margin-bottom: 16px;
 }
 
-.field-group:last-of-type {
+.feedback-form .field-group:last-of-type {
   margin-bottom: 32px;
 }
 
