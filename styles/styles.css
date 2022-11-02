@@ -1716,12 +1716,22 @@ h2.gifts-title {
 }
 
 .field:invalid:focus {
+  border-color: transparent;
   outline: 2px solid #ea5454;;
 }
 
 .field::placeholder {
   color: #b9b9b9;
   border-color: #b9b9b9;
+}
+
+.field:placeholder-shown {
+  border: 1px solid #b9b9b9;
+}
+
+.field:hover:placeholder-shown {
+  outline: none;
+  border-color: #2d3440;
 }
 
 .subscription-form .field {
