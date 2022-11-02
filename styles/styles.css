@@ -1950,16 +1950,20 @@ padding: 9px 8px 7px 8px;
   top: 0;
   left: 0;
   z-index: 1;
-  box-sizing: border-box;
-  margin-top: 44px;
+  margin-top: 36px;
+  padding-top: 8px;
   width: 138px;
+  display: none;
+}
+
+.popover-catalog-content {
+  box-sizing: border-box;
   padding-top: 16px;
   padding-bottom: 16px;
   color: #2d3440;
   background-color: #fcfcfc;
   box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
   border-radius: 4px;
-  display: none;
 }
 
 .navigation-menu-item:first-child:focus-within .popover-catalog {
@@ -1992,12 +1996,12 @@ padding: 9px 8px 7px 8px;
   background-color: #ffcbd8;
 }
 
-.popover-catalog-item:active  {
-  background-color: #ff7799;
+.navigation-menu-item:first-child:hover .popover-catalog {
+  display: block;
 }
 
-.popover-catalog-item:active .popover-catalog {
-  display: block;
+.popover-catalog-item:active  {
+  background-color: #ff7799;
 }
 
 .popover-catalog-item-current  {
