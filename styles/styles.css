@@ -1771,10 +1771,6 @@ padding: 9px 8px 7px 8px;
   display: none;
 }
 
-.popover-open {
-  display: block;
-}
-
 .popover-cart-empty {
   width: 288px;
   padding-right: 0;
@@ -2057,6 +2053,14 @@ padding: 9px 8px 7px 8px;
   width: 100%;
 }
 
+.auth-form .field-group {
+  margin-bottom: 16px;
+}
+
+.auth-form .field-group:last-of-type {
+  margin-bottom: 32px;
+}
+
 .feedback-form .field-group {
   margin-bottom: 16px;
 }
@@ -2077,4 +2081,8 @@ padding: 9px 8px 7px 8px;
   line-height: 20px;
   color: #2d3440;
   text-underline-position: under;
+}
+
+.popover-open {
+  display: block;
 }
