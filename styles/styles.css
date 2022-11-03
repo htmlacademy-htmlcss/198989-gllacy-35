@@ -184,7 +184,16 @@ body {
 }
 
 .button-subscription {
-  margin-left: 16px;
+  justify-self: end;
+  align-self: center;
+  margin-right: 4px;
+  margin-left: 4px;
+  width: 152px;
+  height: 44px;
+}
+
+.button-subscription-spinner {
+  width: 180px;
 }
 
 .button-filter {
@@ -1632,16 +1641,15 @@ h2.gifts-title {
 }
 
 .form-label-icon {
-  position: relative;
-  padding-right: 16px;
+  display: block;
 }
 
 .tooltip {
   position: relative;
+  display: flex;
 }
 
 .tooltip-toggle {
-  position: absolute;
   width: 14px;
   height: 14px;
   margin-top: 3px;
@@ -1655,6 +1663,12 @@ h2.gifts-title {
 }
 
 .tooltip-text {
+  position: absolute;
+  top: 0;
+  left: 33%;
+  margin-left: 28px;
+  margin-top: -11px;
+  z-index: 1;
   background-color: #fcfcfc;
   color: #565c66;
   font-size: 12px;
@@ -1666,18 +1680,16 @@ h2.gifts-title {
   box-shadow: 0 4px 8px rgba(194, 194, 194, 0.2);
   border-radius: 1px;
   width: 162px;
-  position: absolute;
-  top: 0;
-  left: 100%;
-  margin-left: 28px;
-  margin-top: -11px;
-  z-index: 1;
   display: none;
 }
 
 .tooltip-toggle:hover + .tooltip-text,
 .tooltip-toggle:focus + .tooltip-text {
   display: block;
+}
+
+.tooltip-address {
+  left: 12%;
 }
 
 .tooltip-text:after {
@@ -1687,7 +1699,7 @@ h2.gifts-title {
   height: 14px;
   position:absolute;
   top: 18%;
-  left:0;
+  left: 0;
   margin-left: -8px;
 }
 
@@ -1759,10 +1771,16 @@ h2.gifts-title {
   border-color: #2d3440;
 }
 
+.subscription-form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 14px;
+  width: 506px;
+}
+
 .subscription-form .field {
   box-sizing: border-box;
   margin-top: 0;
-  min-width: 332px;
 }
 
 .product-card-image {
