@@ -30,6 +30,7 @@ html {
 }
 
 body {
+  min-width: 1366px;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -590,11 +591,6 @@ h3.gifts-title {
   margin: 0 0 12px 0;
 }
 
-.main-footer {
-  padding-left: 98px;
-  padding-right: 98px;
-}
-
 .footer-htmlacademy-copyright {
   font-size: 12px;
   line-height: 16px;
@@ -701,8 +697,6 @@ h3.gifts-title {
 
 .main-container {
   flex-grow: 1;
-  padding-left: 98px;
-  padding-right: 98px;
 }
 
 .main-inner {
@@ -714,8 +708,6 @@ h3.gifts-title {
   display: flex;
   width: 1170px;
   margin: 0 auto 24px auto;
-  padding-left: 98px;
-  padding-right: 98px;
 }
 
 .navigation-menu {
