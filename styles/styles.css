@@ -184,8 +184,10 @@ body {
 }
 
 .button-subscription {
-  justify-self: end;
-  align-self: center;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  -ms-grid-row-align: center;
+      align-self: center;
   margin-right: 4px;
   margin-left: 4px;
   width: 152px;
@@ -588,6 +590,11 @@ h3.gifts-title {
   margin: 0 0 12px 0;
 }
 
+.main-footer {
+  padding-left: 98px;
+  padding-right: 98px;
+}
+
 .footer-htmlacademy-copyright {
   font-size: 12px;
   line-height: 16px;
@@ -655,7 +662,9 @@ h3.gifts-title {
   background-image: url("../images/icons/arrow-down.svg");
   background-repeat: no-repeat;
   background-position: right 16px center;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   font-family: "Inter", "Roboto", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -692,6 +701,8 @@ h3.gifts-title {
 
 .main-container {
   flex-grow: 1;
+  padding-left: 98px;
+  padding-right: 98px;
 }
 
 .main-inner {
@@ -703,6 +714,8 @@ h3.gifts-title {
   display: flex;
   width: 1170px;
   margin: 0 auto 24px auto;
+  padding-left: 98px;
+  padding-right: 98px;
 }
 
 .navigation-menu {
@@ -984,9 +997,13 @@ h2.gifts-title {
 
 .footer-menu-list {
   box-sizing: border-box;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 16px 8px auto 8px auto;
   grid-template-columns: 16px auto auto;
-  column-gap: 8px;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
   row-gap: 4px;
 }
 
@@ -995,6 +1012,7 @@ h2.gifts-title {
 }
 
 .footer-menu-list .footer-menu-item:first-child {
+  -ms-grid-row-span: 2;
   grid-row: span 2;
   background-image: url("../images/icons/heart.svg");
   background-repeat: no-repeat;
@@ -1135,13 +1153,16 @@ h2.gifts-title {
   text-align: center;
   background-color: transparent;
   border: none;
-  appearance: textfield;
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
   color: #2d3440;
 }
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
@@ -1548,7 +1569,9 @@ h2.gifts-title {
 }
 
 .product-list {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 270px 30px 270px 30px 270px 30px 270px;
   grid-template-columns: repeat(4, 270px);
   gap: 40px 30px;
   margin-bottom: 57px;
@@ -1561,7 +1584,9 @@ h2.gifts-title {
 }
 
 .pagination-container {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: repeat(3, 1fr);
   grid-template-columns: repeat(3, 1fr);
 }
 
@@ -1573,8 +1598,11 @@ h2.gifts-title {
 }
 
 .pagination-show-more {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
   grid-column: 2 / 3;
-  justify-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .pagination-link {
@@ -1619,14 +1647,17 @@ h2.gifts-title {
 }
 
 .shipping-form-container {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 117px 16px 287px;
   grid-template-columns: 117px 287px;
   gap: 20px 16px;
 }
 
 .button-shipping {
   grid-column: 1 / -1;
-  justify-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
   margin-top: 12px;
   }
 
@@ -1740,6 +1771,22 @@ h2.gifts-title {
   border: 1px solid #b9b9b9;
 }
 
+.field:disabled:hover::-webkit-input-placeholder {
+  color: #2d3440;
+}
+
+.field:disabled:hover::-moz-placeholder {
+  color: #2d3440;
+}
+
+.field:disabled:hover:-ms-input-placeholder {
+  color: #2d3440;
+}
+
+.field:disabled:hover::-ms-input-placeholder {
+  color: #2d3440;
+}
+
 .field:disabled:hover::placeholder {
   color: #2d3440;
 }
@@ -1757,13 +1804,51 @@ h2.gifts-title {
   outline: 2px solid #ea5454;;
 }
 
+.field::-webkit-input-placeholder {
+  color: #b9b9b9;
+  border-color: #b9b9b9;
+}
+
+.field::-moz-placeholder {
+  color: #b9b9b9;
+  border-color: #b9b9b9;
+}
+
+.field:-ms-input-placeholder {
+  color: #b9b9b9;
+  border-color: #b9b9b9;
+}
+
+.field::-ms-input-placeholder {
+  color: #b9b9b9;
+  border-color: #b9b9b9;
+}
+
 .field::placeholder {
   color: #b9b9b9;
   border-color: #b9b9b9;
 }
 
+.field:-moz-placeholder-shown {
+  border: 1px solid #b9b9b9;
+}
+
+.field:-ms-input-placeholder {
+  border: 1px solid #b9b9b9;
+}
+
 .field:placeholder-shown {
   border: 1px solid #b9b9b9;
+}
+
+.field:hover:-moz-placeholder-shown {
+  outline: none;
+  border-color: #2d3440;
+}
+
+.field:hover:-ms-input-placeholder {
+  outline: none;
+  border-color: #2d3440;
 }
 
 .field:hover:placeholder-shown {
@@ -1772,7 +1857,9 @@ h2.gifts-title {
 }
 
 .subscription-form {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 14px auto;
   grid-template-columns: 1fr auto;
   gap: 14px;
   width: 506px;
@@ -1857,7 +1944,9 @@ padding: 9px 8px 7px 8px;
 }
 
 .cart-item {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 62px auto auto 16px;
   grid-template-columns: 62px auto auto 16px;
   margin-bottom: 24px;
 }
