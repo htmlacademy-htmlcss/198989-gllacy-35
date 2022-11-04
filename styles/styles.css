@@ -30,7 +30,7 @@ html {
 }
 
 body {
-  min-width: 1366px;
+  min-width: 1346px;
   margin: 0;
   display: flex;
   flex-direction: column;
